@@ -1,0 +1,18 @@
+{
+    "workspace.library": [
+        "/home/xtayex/.config/nvim",
+        "/home/xtayex/.local/share/nvim/lazy/lazy.nvim",
+        "/home/xtayex/.local/share/nvim/lazy/nvim-lspconfig",
+        "/home/xtayex/.local/share/nvim/lazy/lualine.nvim",
+        "/home/xtayex/.local/share/nvim/lazy/nvim-autopairs",
+        "/home/xtayex/.local/share/nvim/lazy/mason.nvim",
+        "/home/xtayex/.local/share/nvim/lazy/nvim-web-devicons",
+        "/home/xtayex/.local/share/nvim/lazy/nvim-cmp",
+        "/home/xtayex/.local/share/nvim/lazy/tokyonight.nvim",
+        "/usr/share/nvim/runtime",
+        "/usr/share/nvim/runtime/pack/dist/opt/matchit",
+        "/usr/lib/nvim",
+        "/home/xtayex/.local/state/nvim/lazy/readme",
+        "${3rd}/luassert/library"
+    ]
+}
