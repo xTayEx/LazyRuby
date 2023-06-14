@@ -70,6 +70,7 @@ lsp_defaults.capabilities = vim.tbl_deep_extend(
 )
 lspconfig.pyright.setup{}
 lspconfig.clangd.setup{}
+lspconfig.bashls.setup{}
 lspconfig.lua_ls.setup {
     settings = {
         Lua = {

@@ -44,4 +44,6 @@ vim.o.pumheight = 10
 vim.o.pumwidth = 30
 vim.o.shell = 'zsh'
 
+vim.g.mapleader = ' '
+
 vim.cmd('syntax on')
