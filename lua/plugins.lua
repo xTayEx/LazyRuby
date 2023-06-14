@@ -1,5 +1,5 @@
 require("lazy").setup({
-	{
+    {
 		"nvim-lualine/lualine.nvim",
 		lazy = false,
 		config = true,
@@ -25,8 +25,7 @@ require("lazy").setup({
 		dependencies = {
 			"nvim-lua/plenary.nvim",
 			"nvim-telescope/telescope-fzf-native.nvim",
-		},
-		config = function()
+		}, config = function()
 			local builtin = require("telescope.builtin")
 			vim.keymap.set("n", "<leader>ff", builtin.find_files, {})
 			vim.keymap.set("n", "<leader>fg", builtin.live_grep, {})
@@ -43,8 +42,7 @@ require("lazy").setup({
 				highlight = {
 					enable = true,
 					additional_vim_regex_highlighting = false,
-				},
-			})
+				}, })
 		end,
 	},
 	{
@@ -60,8 +58,8 @@ require("lazy").setup({
 					show_devicons = true, -- this shows devicons in buffer section
 					show_bufnr = true, -- this appends [bufnr] to buffer section,
 					show_filename_only = false, -- shows base filename only instead of relative path in filename
-					modified_icon = "+ ", -- change the default modified icon
-					modified_italic = true, -- set to true by default; this determines whether the filename turns italic if modified
+					modified_icon = " ", -- change the default modified icon
+					modified_italic = false, -- set to true by default; this determines whether the filename turns italic if modified
 					show_tabs_only = false, -- this shows only tabs instead of tabs + buffers
 				},
 			})
