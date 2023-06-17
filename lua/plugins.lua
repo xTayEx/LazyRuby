@@ -16,8 +16,13 @@ require("lazy").setup({
 	{ "williamboman/mason.nvim", build = ":MasonUpdate", config = true },
 	{ "windwp/nvim-autopairs", config = true },
 	{ "neovim/nvim-lspconfig" },
-	{ "hrsh7th/nvim-cmp" },
-	{ "hrsh7th/cmp-nvim-lsp" },
+	{
+        "hrsh7th/nvim-cmp",
+        event = "InsertEnter",
+        dependencies = {
+            "hrsh7th/cmp-nvim-lsp"
+        }
+    },
 	{ "L3MON4D3/LuaSnip" },
 	{
 		"nvim-telescope/telescope.nvim",
@@ -42,7 +47,11 @@ require("lazy").setup({
 				highlight = {
 					enable = true,
 					additional_vim_regex_highlighting = false,
-				}, })
+				},
+                context_commentstring = {
+                    enable = true,
+                }
+            })
 		end,
 	},
 	{
@@ -69,4 +78,19 @@ require("lazy").setup({
             ]])
 		end
 	},
+    {
+        "numToStr/Comment.nvim",
+        config = function ()
+            require("Comment").setup()
+        end
+    },
+    { "Pocco81/auto-save.nvim" },
+    {
+        "akinsho/toggleterm.nvim",
+        version = "*",
+        opts = {
+            direction = 'vertical',
+            size = vim.o.columns * 0.3
+        }
+    }
 })
