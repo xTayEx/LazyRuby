@@ -47,3 +47,8 @@ vim.o.shell = 'zsh'
 vim.g.mapleader = ' '
 
 vim.cmd('syntax on')
+-- reload file when changed
+vim.cmd[[
+set autoread                                                                                                                                                                                    
+au CursorHold * checktime
+]]
